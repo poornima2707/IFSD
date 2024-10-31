@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINESCOPE Edit Profile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Common styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('./images/background_main_page.jpg') no-repeat center center fixed; /* Background image path */
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+    
+        .logo-container p {
+            color: #ff3b3b;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    
+        .logo-container img {
+            width: 180px;
+            height: auto;
+        }
+    
+        .form-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+    
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            text-align: left;
+        }
+    
+        .form-control {
+            background-color: #333;
+            border: none;
+            color: #fff;
+        }
+    
+        .form-control:focus {
+            background-color: #333;
+            color: #fff;
+            box-shadow: none;
+        }
+    
+        .btn-primary {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo and tagline -->
+    <div class="logo-container">
+        <p>Your Lens into Movies and Series!</p>
+        <img src="./images/logo.png" alt="Cinescope Logo"> <!-- Logo image path -->
+    </div>
+
+    <div class="form-container">
+        <!-- Edit Profile form -->
+        <h2>Edit Profile</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" value="CurrentUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" value="currentemail@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Update your password">
+            </div>
+            <button type="submit" class="btn btn-primary"><a href="index.html">Save Changes</a></button>
+            
+        </form>
+    </div>
+</body>
+</html>
